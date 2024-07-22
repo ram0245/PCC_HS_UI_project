@@ -1,6 +1,4 @@
-import React from 'react';  
-import { Typography, Paper, Grid, Button, IconButton } from '@material-ui/core';  
-import { AddCircle, Edit, Delete } from '@material-ui/icons';  
+import React from 'react';   
 import { useEffect, useState } from 'react';  
   
 const BlogDashboard = () => {  
@@ -21,44 +19,7 @@ const BlogDashboard = () => {
   };  
   return (  
     <div>  
-      <Typography variant="h4" gutterBottom>  
-        Blog Dashboard  
-      </Typography>  
-      <Grid container spacing={3}>  
-        <Grid item xs={12}>  
-          <Paper elevation={3} style={{ padding: '1rem' }}>  
-            <Typography variant="h5" gutterBottom>  
-              Blog Posts  
-            </Typography>  
-            {/* Render a list of blog posts */}  
-            <ul>  
-            {data.map((blog) => (  
-                 <li>  
-                 <Typography variant="subtitle1">  
-                   {blog.title}
-                 </Typography>  
-                 <Typography variant="body1">  
-                   {blog.blog}  
-                    </Typography>
-                 <IconButton color="primary" aria-label="edit">  
-                   <Edit />  
-                 </IconButton>  
-                 <IconButton color="secondary" aria-label="delete">  
-                   <Delete />  
-                 </IconButton>  
-               </li>   
-            ))} 
-            </ul>  
-            <Button  
-              variant="contained"  
-              color="primary"  
-              startIcon={<AddCircle />}  
-            >  
-              Add New Post  
-            </Button>  
-          </Paper>  
-        </Grid>  
-      </Grid>  
+      {/*Fetch data and display it here*/} 
     </div>  
   );  
 };  

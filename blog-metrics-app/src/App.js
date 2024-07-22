@@ -5,7 +5,7 @@ const App = () => {
   return (  
     <div>  
       {/* Other components or content */}  
-      <BlogDashboard />  
+      {/* <BlogDashboard />   */}
     </div>  
   );  
 };  
